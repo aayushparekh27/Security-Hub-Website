@@ -1,0 +1,187 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;  /* Light ivory background for all pages */
+    color: #333;  /* Dark text color */
+    line-height: 1.6;
+}
+
+/* Header section */
+header {
+    background-color: #003366;  /* Navy blue for header */
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;  /* White links in the header */
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #56CCF2;  /* Sky blue color on hover */
+}
+
+/* Hero section */
+.hero {
+    background-color: #003366;  /* Navy blue for hero section */
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* Main content section */
+.content {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;  /* White background for content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.content h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.content ul {
+    margin-bottom: 20px;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.content ul li strong {
+    color: #333;
+}
+
+/* Section for Topic Cards (Security Tips, Password Security, etc.) */
+.section-title {
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.topic-card {
+    background-color: #FFFFFF;  /* White background for cards */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.topic-card:hover {
+    background-color: #56CCF2;  /* Sky blue on hover */
+    transform: translateY(-5px);  /* Slight hover animation */
+}
+
+.topic-card h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.topic-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.topic-card a {
+    text-decoration: none;
+    color: #003366;  /* Navy blue for links */
+    font-weight: bold;
+}
+
+.topic-card a:hover {
+    color: #56CCF2;  /* Sky blue on hover */
+}
+
+/* Footer section */
+footer {
+    background-color: #003366;  /* Navy blue for footer */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .content {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .hero {
+        padding: 30px 20px;
+    }
+
+    .topic-card {
+        margin: 15px 0;
+        padding: 15px;
+    }
+}
